@@ -5,8 +5,18 @@
 
 
 
-let counterValue = document.querySelector("#value");
-console.log(counterValue)
-const buttonSubtract = document.getElementById('decrement')
-console.log(buttonSubtract)
-// const buttonAdd
+
+const buttonSubtract = document.querySelector('[data-action="decrement"]')
+const buttonAdd = document.querySelector('[data-action="increment"]')
+const counterValue = document.querySelector("#value");
+
+buttonAdd.addEventListener('click', targetButtonAddClick)
+function targetButtonAddClick() {
+    counterValue.innerHTML++;
+ 
+};
+
+buttonSubtract.addEventListener('click', targetButtonSubtractClick)
+function targetButtonSubtractClick() {
+        counterValue.innerHTML--;
+};
