@@ -22,3 +22,9 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.galery_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
